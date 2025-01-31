@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card | Kansoldev</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="profile-card">
+        <div class="profile-header">
+          <div class="profile-image">
+            <img
+              src="./profile.jpg"
+              alt="profile image"
+              data-testid="profilePicture"
+            />
+          </div>
+
+          <div class="profile-info">
+            <h2 class="profile-name" data-testid="fullName">
+              Yahaya Oyinkansola
+            </h2>
+
+            <a
+              href="mailto:yahayaoyinkansola@gmail.com"
+              class="email-link"
+              data-testid="emailAddress"
+            >
+              yahayaoyinkansola@gmail.com
+            </a>
+
+            <p class="profile-job" data-testid="jobTitle">
+              Front End Developer
+            </p>
+
+            <p class="profile-location" data-testid="currentLocation">
+              Ilorin, Kwara state, Nigeria
+            </p>
+
+            <p class="profile-description" data-testid="shortBio">
+              "I breathe life into intuitive UI designs, making them functional
+              as a front end developer"
+            </p>
+          </div>
+        </div>
+
+        <div class="profile-links" data-testid="socialLinks">
+          <a target="_blank" href="https://github.com/Kansoldev">GitHub</a>
+          <a target="_blank" href="https://linkedin.com/in/oyinkansola-yahaya"
+            >LinkedIn</a
+          >
+          <a target="_blank" href="https://x.com/Kansoldev">X</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
