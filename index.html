@@ -54,7 +54,19 @@
           >
           <a target="_blank" href="https://x.com/Kansoldev">X</a>
         </div>
+
+        <p style="color: #fff; margin-top: 15px">
+          Current time: <span data-testid="currentTimeUTC">12:22:23 PM</span>
+        </p>
       </section>
     </main>
+
+    <script>
+      const currentDate = new Date();
+
+      document.querySelector(
+        "[data-testid='currentTimeUTC']"
+      ).textContent = `${currentDate.getUTCHours()}:${currentDate.getUTCMinutes()} (in UTC)`;
+    </script>
   </body>
 </html>
